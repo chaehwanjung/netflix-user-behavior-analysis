@@ -1,0 +1,6330 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+
+
+<!-- build 20253.25.1210.1815                               -->
+
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+
+  <document-format-change-manifest>
+
+    <AccessibleZoneTabOrder />
+
+    <AnimationOnByDefault />
+
+    <IntuitiveSorting />
+
+    <IntuitiveSorting_SP2 />
+
+    <MapboxVectorStylesAndLayers />
+
+    <MarkAnimation />
+
+    <ObjectModelEncapsulateLegacy />
+
+    <ObjectModelExtractV2 />
+
+    <ObjectModelTableType />
+
+    <SchemaViewerObjectModel />
+
+    <SetMembershipControl />
+
+    <SheetIdentifierTracking />
+
+    <SortTagCleanup />
+
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+
+    <WindowsPersistSimpleIdentifiers />
+
+    <ZoneBackgroundTransparency />
+
+  </document-format-change-manifest>
+
+  <repository-location id='_17715191092120' path='/workbooks' revision='1.3' />
+
+  <preferences>
+
+    <preference name='ui.encoding.shelf.height' value='24' />
+
+    <preference name='ui.shelf.height' value='26' />
+
+  </preferences>
+
+  <datasources>
+
+    <datasource caption='user_behavior_segment' inline='true' name='federated.1ajrkb414d21ep19p4odk181tff2' version='18.1'>
+
+      <connection class='federated'>
+
+        <named-connections>
+
+          <named-connection caption='user_behavior_segment' name='textscan.1e4oao90tfa8c915ma8a81sb7rsv'>
+
+            <connection class='textscan' directory='../data/processed' filename='user_behavior_segment.csv' password='' server='' workgroup-auth-mode='as-is' />
+
+          </named-connection>
+
+        </named-connections>
+
+        <relation connection='textscan.1e4oao90tfa8c915ma8a81sb7rsv' name='user_behavior_segment.csv' table='[user_behavior_segment#csv]' type='table'>
+
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+
+            <column datatype='string' name='user_id' ordinal='0' />
+
+            <column datatype='string' name='segment' ordinal='1' />
+
+            <column datatype='real' name='consumption_score' ordinal='2' />
+
+            <column datatype='real' name='discovery_score' ordinal='3' />
+
+            <column datatype='real' name='engagement_score' ordinal='4' />
+
+            <column datatype='real' name='recency_score' ordinal='5' />
+
+            <column datatype='string' name='age' ordinal='6' />
+
+            <column datatype='string' name='gender' ordinal='7' />
+
+            <column datatype='string' name='country' ordinal='8' />
+
+            <column datatype='string' name='subscription_plan' ordinal='9' />
+
+            <column datatype='integer' name='is_active' ordinal='10' />
+
+            <column datatype='real' name='monthly_spend' ordinal='11' />
+
+            <column datatype='string' name='primary_device' ordinal='12' />
+
+            <column datatype='integer' name='household_size' ordinal='13' />
+
+            <column datatype='datetime' name='created_at' ordinal='14' />
+
+            <column datatype='integer' name='total_watch_cnt' ordinal='15' />
+
+            <column datatype='real' name='total_watch_minutes' ordinal='16' />
+
+            <column datatype='real' name='avg_watch_minutes' ordinal='17' />
+
+            <column datatype='real' name='avg_watch_pct' ordinal='18' />
+
+            <column datatype='date' name='last_watch_date' ordinal='19' />
+
+            <column datatype='integer' name='watch_genre_cnt' ordinal='20' />
+
+            <column datatype='real' name='watch_original_ratio' ordinal='21' />
+
+            <column datatype='real' name='avg_watch_runtime' ordinal='22' />
+
+            <column datatype='real' name='recommendation_ctr' ordinal='23' />
+
+            <column datatype='integer' name='total_search_cnt' ordinal='24' />
+
+            <column datatype='real' name='search_ctr' ordinal='25' />
+
+            <column datatype='integer' name='total_review_cnt' ordinal='26' />
+
+            <column datatype='real' name='avg_review_rating' ordinal='27' />
+
+          </columns>
+
+        </relation>
+
+        <metadata-records>
+
+          <metadata-record class='capability'>
+
+            <remote-name />
+
+            <remote-type>0</remote-type>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias />
+
+            <aggregation>Count</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <attributes>
+
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+
+            </attributes>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>user_id</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[user_id]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>user_id</remote-alias>
+
+            <ordinal>0</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>segment</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[segment]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>segment</remote-alias>
+
+            <ordinal>1</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>consumption_score</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[consumption_score]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>consumption_score</remote-alias>
+
+            <ordinal>2</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>discovery_score</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[discovery_score]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>discovery_score</remote-alias>
+
+            <ordinal>3</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>engagement_score</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[engagement_score]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>engagement_score</remote-alias>
+
+            <ordinal>4</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>recency_score</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[recency_score]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>recency_score</remote-alias>
+
+            <ordinal>5</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>age</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[age]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>age</remote-alias>
+
+            <ordinal>6</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>gender</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[gender]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>gender</remote-alias>
+
+            <ordinal>7</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>country</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[country]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>country</remote-alias>
+
+            <ordinal>8</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>subscription_plan</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[subscription_plan]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>subscription_plan</remote-alias>
+
+            <ordinal>9</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>is_active</remote-name>
+
+            <remote-type>20</remote-type>
+
+            <local-name>[is_active]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>is_active</remote-alias>
+
+            <ordinal>10</ordinal>
+
+            <local-type>integer</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>monthly_spend</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[monthly_spend]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>monthly_spend</remote-alias>
+
+            <ordinal>11</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>primary_device</remote-name>
+
+            <remote-type>129</remote-type>
+
+            <local-name>[primary_device]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>primary_device</remote-alias>
+
+            <ordinal>12</ordinal>
+
+            <local-type>string</local-type>
+
+            <aggregation>Count</aggregation>
+
+            <scale>1</scale>
+
+            <width>1073741823</width>
+
+            <contains-null>true</contains-null>
+
+            <collation flag='0' name='LKO_RKR' />
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>household_size</remote-name>
+
+            <remote-type>20</remote-type>
+
+            <local-name>[household_size]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>household_size</remote-alias>
+
+            <ordinal>13</ordinal>
+
+            <local-type>integer</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>created_at</remote-name>
+
+            <remote-type>135</remote-type>
+
+            <local-name>[created_at]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>created_at</remote-alias>
+
+            <ordinal>14</ordinal>
+
+            <local-type>datetime</local-type>
+
+            <aggregation>Year</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>total_watch_cnt</remote-name>
+
+            <remote-type>20</remote-type>
+
+            <local-name>[total_watch_cnt]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>total_watch_cnt</remote-alias>
+
+            <ordinal>15</ordinal>
+
+            <local-type>integer</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>total_watch_minutes</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[total_watch_minutes]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>total_watch_minutes</remote-alias>
+
+            <ordinal>16</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>avg_watch_minutes</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[avg_watch_minutes]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>avg_watch_minutes</remote-alias>
+
+            <ordinal>17</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>avg_watch_pct</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[avg_watch_pct]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>avg_watch_pct</remote-alias>
+
+            <ordinal>18</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>last_watch_date</remote-name>
+
+            <remote-type>133</remote-type>
+
+            <local-name>[last_watch_date]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>last_watch_date</remote-alias>
+
+            <ordinal>19</ordinal>
+
+            <local-type>date</local-type>
+
+            <aggregation>Year</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>watch_genre_cnt</remote-name>
+
+            <remote-type>20</remote-type>
+
+            <local-name>[watch_genre_cnt]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>watch_genre_cnt</remote-alias>
+
+            <ordinal>20</ordinal>
+
+            <local-type>integer</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>watch_original_ratio</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[watch_original_ratio]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>watch_original_ratio</remote-alias>
+
+            <ordinal>21</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>avg_watch_runtime</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[avg_watch_runtime]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>avg_watch_runtime</remote-alias>
+
+            <ordinal>22</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>recommendation_ctr</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[recommendation_ctr]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>recommendation_ctr</remote-alias>
+
+            <ordinal>23</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>total_search_cnt</remote-name>
+
+            <remote-type>20</remote-type>
+
+            <local-name>[total_search_cnt]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>total_search_cnt</remote-alias>
+
+            <ordinal>24</ordinal>
+
+            <local-type>integer</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>search_ctr</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[search_ctr]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>search_ctr</remote-alias>
+
+            <ordinal>25</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>total_review_cnt</remote-name>
+
+            <remote-type>20</remote-type>
+
+            <local-name>[total_review_cnt]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>total_review_cnt</remote-alias>
+
+            <ordinal>26</ordinal>
+
+            <local-type>integer</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+          <metadata-record class='column'>
+
+            <remote-name>avg_review_rating</remote-name>
+
+            <remote-type>5</remote-type>
+
+            <local-name>[avg_review_rating]</local-name>
+
+            <parent-name>[user_behavior_segment.csv]</parent-name>
+
+            <remote-alias>avg_review_rating</remote-alias>
+
+            <ordinal>27</ordinal>
+
+            <local-type>real</local-type>
+
+            <aggregation>Sum</aggregation>
+
+            <contains-null>true</contains-null>
+
+            <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+          </metadata-record>
+
+        </metadata-records>
+
+      </connection>
+
+      <aliases enabled='yes' />
+
+      <column caption='FLTR_활성 사용자 필터' datatype='string' name='[Calculation_0760077864427526]' role='dimension' type='nominal'>
+
+        <calculation class='tableau' formula='IF [is_active] = 1 THEN &quot;Active&quot;&#13;&#10;ELSE &quot;Inactive&quot;&#13;&#10;END' />
+
+      </column>
+
+      <column caption='C_활성 사용자 비율' datatype='real' name='[Calculation_0760077898145806]' role='measure' type='quantitative'>
+
+        <calculation class='tableau' formula='SUM([is_active]) / COUNT([user_id])' />
+
+      </column>
+
+      <column caption='C_마지막 시청 후 경과일' datatype='integer' name='[Calculation_1900546817167360]' role='measure' type='quantitative'>
+
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, [last_watch_date], TODAY())' />
+
+      </column>
+
+      <column caption='user_behavior_segment.csv' datatype='table' name='[__tableau_internal_object_id__].[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]' role='measure' type='quantitative' />
+
+      <column caption='사용자 나이' datatype='string' name='[age]' role='dimension' type='nominal' />
+
+      <column caption='평균 리뷰 평점' datatype='real' name='[avg_review_rating]' role='measure' type='quantitative' />
+
+      <column caption='평균 시청 시간' datatype='real' name='[avg_watch_minutes]' role='measure' type='quantitative' />
+
+      <column caption='평균 시청 완료율' datatype='real' name='[avg_watch_pct]' role='measure' type='quantitative' />
+
+      <column caption='평균 시청 러닝타임' datatype='real' name='[avg_watch_runtime]' role='measure' type='quantitative' />
+
+      <column caption='소비 강도 점수' datatype='real' name='[consumption_score]' role='measure' type='quantitative' />
+
+      <column caption='사용자 거주 국가' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+
+      <column caption='계정 생성일' datatype='datetime' name='[created_at]' role='dimension' type='ordinal' />
+
+      <column caption='탐색 성향 점수' datatype='real' name='[discovery_score]' role='measure' type='quantitative' />
+
+      <column caption='참여 점수' datatype='real' name='[engagement_score]' role='measure' type='quantitative' />
+
+      <column caption='사용자 성별' datatype='string' name='[gender]' role='dimension' type='nominal' />
+
+      <column caption='가구원 수' datatype='integer' name='[household_size]' role='measure' type='quantitative' />
+
+      <column caption='현재 활성 여부' datatype='integer' name='[is_active]' role='measure' type='quantitative' />
+
+      <column caption='최근 시청일' datatype='date' name='[last_watch_date]' role='dimension' type='ordinal' />
+
+      <column caption='월 평균 지출 금액' datatype='real' name='[monthly_spend]' role='measure' type='quantitative' />
+
+      <column caption='주 사용 디바이스' datatype='string' name='[primary_device]' role='dimension' type='nominal' />
+
+      <column caption='최근성 점수' datatype='real' name='[recency_score]' role='measure' type='quantitative' />
+
+      <column caption='추천 클릭률' datatype='real' name='[recommendation_ctr]' role='measure' type='quantitative' />
+
+      <column caption='검색 클릭률' datatype='real' name='[search_ctr]' role='measure' type='quantitative' />
+
+      <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+      <column caption='구독 요금제' datatype='string' name='[subscription_plan]' role='dimension' type='nominal' />
+
+      <column caption='총 리뷰 작성 횟수' datatype='integer' name='[total_review_cnt]' role='measure' type='quantitative' />
+
+      <column caption='총 검색 횟수' datatype='integer' name='[total_search_cnt]' role='measure' type='quantitative' />
+
+      <column caption='총 시청 세션 수' datatype='integer' name='[total_watch_cnt]' role='measure' type='quantitative' />
+
+      <column caption='총 시청 시간(분)' datatype='real' name='[total_watch_minutes]' role='measure' type='quantitative' />
+
+      <column caption='사용자 ID' datatype='string' name='[user_id]' role='dimension' type='nominal' />
+
+      <column caption='시청 장르 수' datatype='integer' name='[watch_genre_cnt]' role='measure' type='quantitative' />
+
+      <column caption='오리지널 시청 비율' datatype='real' name='[watch_original_ratio]' role='measure' type='quantitative' />
+
+      <column-instance column='[consumption_score]' derivation='Avg' name='[avg:consumption_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[discovery_score]' derivation='Avg' name='[avg:discovery_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[engagement_score]' derivation='Avg' name='[avg:engagement_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[recency_score]' derivation='Avg' name='[avg:recency_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+      <column-instance column='[subscription_plan]' derivation='None' name='[none:subscription_plan:nk]' pivot='key' type='nominal' />
+
+      <column-instance column='[consumption_score]' derivation='Sum' name='[sum:consumption_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[discovery_score]' derivation='Sum' name='[sum:discovery_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[engagement_score]' derivation='Sum' name='[sum:engagement_score:qk]' pivot='key' type='quantitative' />
+
+      <column-instance column='[recency_score]' derivation='Sum' name='[sum:recency_score:qk]' pivot='key' type='quantitative' />
+
+      <group caption='동작(사용자 세그먼트)' hidden='true' name='[Action (사용자 세그먼트)]' name-style='unqualified' user:auto-column='sheet_link'>
+
+        <groupfilter function='crossjoin'>
+
+          <groupfilter function='level-members' level='[segment]' />
+
+        </groupfilter>
+
+      </group>
+
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0lmlyxe0xr5ti81gpwh950rx2tqc.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/19/2026 04:35:00 PM' username='tableau_internal_user'>
+
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+
+          <metadata-records>
+
+            <metadata-record class='column'>
+
+              <remote-name>user_id</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[user_id]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>user_id</remote-alias>
+
+              <ordinal>0</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>10000</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>segment</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[segment]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>segment</remote-alias>
+
+              <ordinal>1</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>5</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>consumption_score</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[consumption_score]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>consumption_score</remote-alias>
+
+              <ordinal>2</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>4</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>discovery_score</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[discovery_score]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>discovery_score</remote-alias>
+
+              <ordinal>3</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>7</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>engagement_score</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[engagement_score]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>engagement_score</remote-alias>
+
+              <ordinal>4</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>4</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>recency_score</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[recency_score]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>recency_score</remote-alias>
+
+              <ordinal>5</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>4</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>age</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[age]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>age</remote-alias>
+
+              <ordinal>6</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>9</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>gender</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[gender]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>gender</remote-alias>
+
+              <ordinal>7</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>4</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>country</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[country]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>country</remote-alias>
+
+              <ordinal>8</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>2</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>subscription_plan</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[subscription_plan]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>subscription_plan</remote-alias>
+
+              <ordinal>9</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>4</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>is_active</remote-name>
+
+              <remote-type>20</remote-type>
+
+              <local-name>[is_active]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>is_active</remote-alias>
+
+              <ordinal>10</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>integer</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>2</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>monthly_spend</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[monthly_spend]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>monthly_spend</remote-alias>
+
+              <ordinal>11</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>2585</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>primary_device</remote-name>
+
+              <remote-type>129</remote-type>
+
+              <local-name>[primary_device]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>primary_device</remote-alias>
+
+              <ordinal>12</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>string</local-type>
+
+              <aggregation>Count</aggregation>
+
+              <approx-count>6</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <collation flag='0' name='LKO_RKR' />
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>household_size</remote-name>
+
+              <remote-type>20</remote-type>
+
+              <local-name>[household_size]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>household_size</remote-alias>
+
+              <ordinal>13</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>integer</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>8</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>created_at</remote-name>
+
+              <remote-type>135</remote-type>
+
+              <local-name>[created_at]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>created_at</remote-alias>
+
+              <ordinal>14</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>datetime</local-type>
+
+              <aggregation>Year</aggregation>
+
+              <approx-count>10000</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>total_watch_cnt</remote-name>
+
+              <remote-type>20</remote-type>
+
+              <local-name>[total_watch_cnt]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>total_watch_cnt</remote-alias>
+
+              <ordinal>15</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>integer</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>18</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>total_watch_minutes</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[total_watch_minutes]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>total_watch_minutes</remote-alias>
+
+              <ordinal>16</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>3765</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>avg_watch_minutes</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[avg_watch_minutes]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>avg_watch_minutes</remote-alias>
+
+              <ordinal>17</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>4659</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>avg_watch_pct</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[avg_watch_pct]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>avg_watch_pct</remote-alias>
+
+              <ordinal>18</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>4234</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>last_watch_date</remote-name>
+
+              <remote-type>133</remote-type>
+
+              <local-name>[last_watch_date]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>last_watch_date</remote-alias>
+
+              <ordinal>19</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>date</local-type>
+
+              <aggregation>Year</aggregation>
+
+              <approx-count>367</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>watch_genre_cnt</remote-name>
+
+              <remote-type>20</remote-type>
+
+              <local-name>[watch_genre_cnt]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>watch_genre_cnt</remote-alias>
+
+              <ordinal>20</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>integer</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>16</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>watch_original_ratio</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[watch_original_ratio]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>watch_original_ratio</remote-alias>
+
+              <ordinal>21</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>92</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>avg_watch_runtime</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[avg_watch_runtime]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>avg_watch_runtime</remote-alias>
+
+              <ordinal>22</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>2636</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>recommendation_ctr</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[recommendation_ctr]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>recommendation_ctr</remote-alias>
+
+              <ordinal>23</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>34</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>total_search_cnt</remote-name>
+
+              <remote-type>20</remote-type>
+
+              <local-name>[total_search_cnt]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>total_search_cnt</remote-alias>
+
+              <ordinal>24</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>integer</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>9</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>search_ctr</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[search_ctr]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>search_ctr</remote-alias>
+
+              <ordinal>25</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>24</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>total_review_cnt</remote-name>
+
+              <remote-type>20</remote-type>
+
+              <local-name>[total_review_cnt]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>total_review_cnt</remote-alias>
+
+              <ordinal>26</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>integer</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>8</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+            <metadata-record class='column'>
+
+              <remote-name>avg_review_rating</remote-name>
+
+              <remote-type>5</remote-type>
+
+              <local-name>[avg_review_rating]</local-name>
+
+              <parent-name>[Extract]</parent-name>
+
+              <remote-alias>avg_review_rating</remote-alias>
+
+              <ordinal>27</ordinal>
+
+              <family>user_behavior_segment.csv</family>
+
+              <local-type>real</local-type>
+
+              <aggregation>Sum</aggregation>
+
+              <approx-count>43</approx-count>
+
+              <contains-null>true</contains-null>
+
+              <object-id>[user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574]</object-id>
+
+            </metadata-record>
+
+          </metadata-records>
+
+        </connection>
+
+      </extract>
+
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+
+      <style>
+
+        <style-rule element='mark'>
+
+          <encoding attr='color' field='[none:segment:nk]' type='palette'>
+
+            <map to='#000000'>
+
+              <bucket>&quot;Algorithm Dependent&quot;</bucket>
+
+            </map>
+
+            <map to='#00007f'>
+
+              <bucket>&quot;Dormant User&quot;</bucket>
+
+            </map>
+
+            <map to='#0000ff'>
+
+              <bucket>&quot;Engaged Critic&quot;</bucket>
+
+            </map>
+
+            <map to='#4e79a7'>
+
+              <bucket>&quot;Binge&quot;</bucket>
+
+            </map>
+
+            <map to='#bab0ac'>
+
+              <bucket>&quot;Explorer&quot;</bucket>
+
+            </map>
+
+          </encoding>
+
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+
+            <map to='#4e79a7'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[sum:consumption_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#59a14f'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2]&quot;</bucket>
+
+            </map>
+
+            <map to='#59a14f'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[avg:discovery_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#76b7b2'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[sum:discovery_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#e15759'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[avg:consumption_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#e15759'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[sum:recency_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#edc948'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[avg:recency_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#f28e2b'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[avg:engagement_score:qk]&quot;</bucket>
+
+            </map>
+
+            <map to='#f28e2b'>
+
+              <bucket>&quot;[federated.1ajrkb414d21ep19p4odk181tff2].[sum:engagement_score:qk]&quot;</bucket>
+
+            </map>
+
+          </encoding>
+
+          <encoding attr='color' field='[none:subscription_plan:nk]' type='palette'>
+
+            <map to='#00007f'>
+
+              <bucket>&quot;PremiumPlus&quot;</bucket>
+
+            </map>
+
+            <map to='#0000ff'>
+
+              <bucket>&quot;Premium&quot;</bucket>
+
+            </map>
+
+            <map to='#4e79a7'>
+
+              <bucket>&quot;Basic&quot;</bucket>
+
+            </map>
+
+            <map to='#bab0ac'>
+
+              <bucket>&quot;Standard&quot;</bucket>
+
+            </map>
+
+          </encoding>
+
+        </style-rule>
+
+      </style>
+
+      <semantic-values>
+
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+
+      </semantic-values>
+
+      <default-sorts>
+
+        <natural-sort column='[none:segment:nk]' direction='ASC' />
+
+      </default-sorts>
+
+      <object-graph>
+
+        <objects>
+
+          <object caption='user_behavior_segment.csv' id='user_behavior_segment.csv_786431EABBA947E28EC6660E0AC96574'>
+
+            <properties context=''>
+
+              <relation connection='textscan.1e4oao90tfa8c915ma8a81sb7rsv' name='user_behavior_segment.csv' table='[user_behavior_segment#csv]' type='table'>
+
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+
+                  <column datatype='string' name='user_id' ordinal='0' />
+
+                  <column datatype='string' name='segment' ordinal='1' />
+
+                  <column datatype='real' name='consumption_score' ordinal='2' />
+
+                  <column datatype='real' name='discovery_score' ordinal='3' />
+
+                  <column datatype='real' name='engagement_score' ordinal='4' />
+
+                  <column datatype='real' name='recency_score' ordinal='5' />
+
+                  <column datatype='string' name='age' ordinal='6' />
+
+                  <column datatype='string' name='gender' ordinal='7' />
+
+                  <column datatype='string' name='country' ordinal='8' />
+
+                  <column datatype='string' name='subscription_plan' ordinal='9' />
+
+                  <column datatype='integer' name='is_active' ordinal='10' />
+
+                  <column datatype='real' name='monthly_spend' ordinal='11' />
+
+                  <column datatype='string' name='primary_device' ordinal='12' />
+
+                  <column datatype='integer' name='household_size' ordinal='13' />
+
+                  <column datatype='datetime' name='created_at' ordinal='14' />
+
+                  <column datatype='integer' name='total_watch_cnt' ordinal='15' />
+
+                  <column datatype='real' name='total_watch_minutes' ordinal='16' />
+
+                  <column datatype='real' name='avg_watch_minutes' ordinal='17' />
+
+                  <column datatype='real' name='avg_watch_pct' ordinal='18' />
+
+                  <column datatype='date' name='last_watch_date' ordinal='19' />
+
+                  <column datatype='integer' name='watch_genre_cnt' ordinal='20' />
+
+                  <column datatype='real' name='watch_original_ratio' ordinal='21' />
+
+                  <column datatype='real' name='avg_watch_runtime' ordinal='22' />
+
+                  <column datatype='real' name='recommendation_ctr' ordinal='23' />
+
+                  <column datatype='integer' name='total_search_cnt' ordinal='24' />
+
+                  <column datatype='real' name='search_ctr' ordinal='25' />
+
+                  <column datatype='integer' name='total_review_cnt' ordinal='26' />
+
+                  <column datatype='real' name='avg_review_rating' ordinal='27' />
+
+                </columns>
+
+              </relation>
+
+            </properties>
+
+            <properties context='extract'>
+
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+
+            </properties>
+
+          </object>
+
+        </objects>
+
+      </object-graph>
+
+    </datasource>
+
+  </datasources>
+
+  <mapsources>
+
+    <mapsource name='Tableau' />
+
+  </mapsources>
+
+  <actions>
+
+    <action caption='필터1' name='[Action1_B24A7FCC37B54F83BD7B62E2F5BF6E4D]'>
+
+      <activation type='on-select' />
+
+      <source dashboard='넷플릭스 사용자 행동 기반 세그먼트 인사이트 및 비즈니스 영향 분석' type='sheet'>
+
+        <exclude-sheet name='세그먼트별 활성 사용자 비율' />
+
+      </source>
+
+      <link caption='필터1' delimiter=',' escape='\' expression='tsl:%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4%20%EC%82%AC%EC%9A%A9%EC%9E%90%20%ED%96%89%EB%8F%99%20%EA%B8%B0%EB%B0%98%20%EC%84%B8%EA%B7%B8%EB%A8%BC%ED%8A%B8%20%EC%9D%B8%EC%82%AC%EC%9D%B4%ED%8A%B8%20%EB%B0%8F%20%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%20%EC%98%81%ED%96%A5%20%EB%B6%84%EC%84%9D?' include-null='true' multi-select='true' url-escape='true' />
+
+      <command command='tsc:tsl-filter'>
+
+        <param name='target' value='넷플릭스 사용자 행동 기반 세그먼트 인사이트 및 비즈니스 영향 분석' />
+
+      </command>
+
+    </action>
+
+  </actions>
+
+  <worksheets>
+
+    <worksheet name='세그먼트 분포'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <mapsources>
+
+            <mapsource name='Tableau' />
+
+          </mapsources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column caption='min(0)' datatype='integer' name='[Calculation_0760077857779713]' role='measure' type='quantitative' user:unnamed='세그먼트 분포'>
+
+              <calculation class='tableau' formula='min(0)' />
+
+            </column>
+
+            <column caption='FLTR_활성 사용자 필터' datatype='string' name='[Calculation_0760077864427526]' role='dimension' type='nominal'>
+
+              <calculation class='tableau' formula='IF [is_active] = 1 THEN &quot;Active&quot;&#13;&#10;ELSE &quot;Inactive&quot;&#13;&#10;END' />
+
+            </column>
+
+            <column caption='사용자 거주 국가' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+
+            <column-instance column='[segment]' derivation='Count' name='[cum:cnt:segment:qk]' pivot='key' type='quantitative'>
+
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+
+            </column-instance>
+
+            <column caption='현재 활성 여부' datatype='integer' name='[is_active]' role='measure' type='quantitative' />
+
+            <column-instance column='[Calculation_0760077864427526]' derivation='None' name='[none:Calculation_0760077864427526:nk]' pivot='key' type='nominal' />
+
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column-instance column='[subscription_plan]' derivation='None' name='[none:subscription_plan:nk]' pivot='key' type='nominal' />
+
+            <column-instance column='[segment]' derivation='Count' name='[pcto:cnt:segment:qk]' pivot='key' type='quantitative'>
+
+              <table-calc ordering-type='Rows' type='PctTotal' />
+
+            </column-instance>
+
+            <column-instance column='[user_id]' derivation='Count' name='[pcto:cnt:user_id:qk]' pivot='key' type='quantitative'>
+
+              <table-calc ordering-type='Rows' type='PctTotal' />
+
+            </column-instance>
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+            <column caption='구독 요금제' datatype='string' name='[subscription_plan]' role='dimension' type='nominal' />
+
+            <column caption='사용자 ID' datatype='string' name='[user_id]' role='dimension' type='nominal' />
+
+            <column-instance column='[Calculation_0760077857779713]' derivation='User' name='[usr:Calculation_0760077857779713:qk]' pivot='key' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <filter class='categorical' column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:Calculation_0760077864427526:nk]'>
+
+            <groupfilter function='level-members' level='[none:Calculation_0760077864427526:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+
+          </filter>
+
+          <filter class='categorical' column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:country:nk]'>
+
+            <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+
+          </filter>
+
+          <filter class='categorical' column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]'>
+
+            <groupfilter function='level-members' level='[none:segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+
+          </filter>
+
+          <manual-sort column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='ASC'>
+
+            <dictionary>
+
+              <bucket>&quot;Binge&quot;</bucket>
+
+              <bucket>&quot;Engaged Critic&quot;</bucket>
+
+              <bucket>&quot;Dormant User&quot;</bucket>
+
+              <bucket>&quot;Explorer&quot;</bucket>
+
+              <bucket>&quot;Algorithm Dependent&quot;</bucket>
+
+              <bucket>%all%</bucket>
+
+            </dictionary>
+
+          </manual-sort>
+
+          <filter class='categorical' column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]'>
+
+            <groupfilter function='level-members' level='[none:subscription_plan:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+
+          </filter>
+
+          <slices>
+
+            <column>[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]</column>
+
+            <column>[federated.1ajrkb414d21ep19p4odk181tff2].[none:country:nk]</column>
+
+            <column>[federated.1ajrkb414d21ep19p4odk181tff2].[none:Calculation_0760077864427526:nk]</column>
+
+            <column>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</column>
+
+          </slices>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]' scope='cols' value='false' />
+
+            <format attr='display' class='1' field='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]' scope='cols' value='false' />
+
+            <encoding attr='space' class='1' field='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]' value='p0.0%' />
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[cum:cnt:segment:qk]' value='*0명' />
+
+          </style-rule>
+
+          <style-rule element='gridline'>
+
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+
+            <format attr='stroke-size' scope='cols' value='0' />
+
+            <format attr='line-visibility' scope='cols' value='off' />
+
+          </style-rule>
+
+          <style-rule element='zeroline'>
+
+            <format attr='stroke-size' scope='cols' value='0' />
+
+            <format attr='line-visibility' scope='cols' value='off' />
+
+          </style-rule>
+
+          <style-rule element='map-layer'>
+
+            <format attr='enabled' id='b01002_001e' value='false' />
+
+            <format attr='enabled' id='b01002_002e' value='false' />
+
+            <format attr='enabled' id='b01002_003e' value='false' />
+
+            <format attr='enabled' id='dp02_0001e' value='false' />
+
+            <format attr='enabled' id='dp02_0015e' value='false' />
+
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+
+            <format attr='enabled' id='dp03_0028e' value='false' />
+
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+
+            <format attr='enabled' id='dp03_0062e' value='false' />
+
+            <format attr='enabled' id='dp03_0088e' value='false' />
+
+            <format attr='enabled' id='dp04_0001e' value='false' />
+
+            <format attr='enabled' id='dp04_0046e' value='false' />
+
+            <format attr='enabled' id='dp04_0047e' value='false' />
+
+            <format attr='enabled' id='dp04_0089e' value='false' />
+
+            <format attr='enabled' id='dp05_0001e' value='false' />
+
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+
+            <format attr='enabled' id='dp05_0032e' value='false' />
+
+            <format attr='enabled' id='dp05_0033e' value='false' />
+
+            <format attr='enabled' id='dp05_0034e' value='false' />
+
+            <format attr='enabled' id='dp05_0039e' value='false' />
+
+            <format attr='enabled' id='dp05_0047e' value='false' />
+
+            <format attr='enabled' id='dp05_0053e' value='false' />
+
+            <format attr='enabled' id='dp05_0066e' value='false' />
+
+            <format attr='enabled' id='dp05_0077e' value='false' />
+
+          </style-rule>
+
+          <style-rule element='map'>
+
+            <format attr='washout' value='0' />
+
+            <format attr='map-style' value='light' />
+
+          </style-rule>
+
+          <style-rule element='map-data-layer'>
+
+            <format attr='palette' value='tableau-map-blue-green-light' />
+
+            <format attr='geo-area-type' value='State' />
+
+          </style-rule>
+
+          <style-rule element='quick-filter'>
+
+            <format attr='title' field='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' value='&#10;사용자 세그먼트'>
+
+              <formatted-text>
+
+                <run fontalignment='1'>Æ&#10;</run>
+
+                <run bold='true' fontalignment='1'>사용자 세그먼트</run>
+
+              </formatted-text>
+
+            </format>
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Pie' />
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='false' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Pie' />
+
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+
+            <encodings>
+
+              <color column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' />
+
+              <wedge-size column='[federated.1ajrkb414d21ep19p4odk181tff2].[cum:cnt:segment:qk]' />
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' />
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run>&lt;</run>
+
+                <run>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</run>
+
+                <run>&gt;&#10;&lt;</run>
+
+                <run>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]</run>
+
+                <run>&gt;</run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-orientation' value='0' />
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='datalabel'>
+
+                <format attr='color-mode' value='auto' />
+
+                <format attr='font-size' value='8' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='size' value='2' />
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='false' />
+
+                <format attr='mark-color' value='#4e79a7' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]' x-index='1'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Pie' />
+
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='false' />
+
+                <format attr='size' value='1.1974033117294312' />
+
+                <format attr='mark-color' value='#ffffff' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols>([federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk] + [federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk])</cols>
+
+        <mark-labels>
+
+          <mark-label id='0'>
+
+            <tuple-reference>
+
+              <tuple-descriptor>
+
+                <pane-descriptor>
+
+                  <x-fields>
+
+                    <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  </x-fields>
+
+                  <y-fields />
+
+                </pane-descriptor>
+
+                <columns>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:segment:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]</field>
+
+                </columns>
+
+              </tuple-descriptor>
+
+              <tuple>
+
+                <value>&quot;Algorithm Dependent&quot;</value>
+
+                <value>0</value>
+
+                <value>0.090300000000000005</value>
+
+                <value>0.090300000000000005</value>
+
+              </tuple>
+
+            </tuple-reference>
+
+            <label-position x='2' y='23' />
+
+          </mark-label>
+
+          <mark-label id='1'>
+
+            <tuple-reference>
+
+              <tuple-descriptor>
+
+                <pane-descriptor>
+
+                  <x-fields>
+
+                    <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  </x-fields>
+
+                  <y-fields />
+
+                </pane-descriptor>
+
+                <columns>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:segment:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]</field>
+
+                </columns>
+
+              </tuple-descriptor>
+
+              <tuple>
+
+                <value>&quot;Dormant User&quot;</value>
+
+                <value>0</value>
+
+                <value>0.17119999999999999</value>
+
+                <value>0.17119999999999999</value>
+
+              </tuple>
+
+            </tuple-reference>
+
+            <label-position x='-47' y='-7' />
+
+          </mark-label>
+
+          <mark-label id='2'>
+
+            <tuple-reference>
+
+              <tuple-descriptor>
+
+                <pane-descriptor>
+
+                  <x-fields>
+
+                    <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  </x-fields>
+
+                  <y-fields />
+
+                </pane-descriptor>
+
+                <columns>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:segment:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]</field>
+
+                </columns>
+
+              </tuple-descriptor>
+
+              <tuple>
+
+                <value>&quot;Engaged Critic&quot;</value>
+
+                <value>0</value>
+
+                <value>0.20419999999999999</value>
+
+                <value>0.20419999999999999</value>
+
+              </tuple>
+
+            </tuple-reference>
+
+            <label-position x='5' y='-19' />
+
+          </mark-label>
+
+          <mark-label id='3'>
+
+            <tuple-reference>
+
+              <tuple-descriptor>
+
+                <pane-descriptor>
+
+                  <x-fields>
+
+                    <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  </x-fields>
+
+                  <y-fields />
+
+                </pane-descriptor>
+
+                <columns>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:segment:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]</field>
+
+                </columns>
+
+              </tuple-descriptor>
+
+              <tuple>
+
+                <value>&quot;Binge&quot;</value>
+
+                <value>0</value>
+
+                <value>0.40579999999999999</value>
+
+                <value>0.40579999999999999</value>
+
+              </tuple>
+
+            </tuple-reference>
+
+            <label-position x='29' y='1' />
+
+          </mark-label>
+
+          <mark-label id='4'>
+
+            <tuple-reference>
+
+              <tuple-descriptor>
+
+                <pane-descriptor>
+
+                  <x-fields>
+
+                    <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  </x-fields>
+
+                  <y-fields />
+
+                </pane-descriptor>
+
+                <columns>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077857779713:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:segment:qk]</field>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:user_id:qk]</field>
+
+                </columns>
+
+              </tuple-descriptor>
+
+              <tuple>
+
+                <value>&quot;Explorer&quot;</value>
+
+                <value>0</value>
+
+                <value>0.1285</value>
+
+                <value>0.1285</value>
+
+              </tuple>
+
+            </tuple-reference>
+
+            <label-position x='-29' y='2' />
+
+          </mark-label>
+
+        </mark-labels>
+
+      </table>
+
+      <simple-id uuid='{32B0566A-6A26-4FE6-B971-4CF117F08C68}' />
+
+    </worksheet>
+
+    <worksheet name='세그먼트별 평균 검색 후 클릭률'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[search_ctr]' derivation='Avg' name='[avg:search_ctr:qk]' pivot='key' type='quantitative' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column caption='검색 클릭률' datatype='real' name='[search_ctr]' role='measure' type='quantitative' />
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+          </datasource-dependencies>
+
+          <shelf-sorts>
+
+            <shelf-sort-v2 dimension-to-sort='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]' shelf='rows' />
+
+          </shelf-sorts>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]' scope='cols' value='false' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]' value='p0.0%' />
+
+          </style-rule>
+
+          <style-rule element='worksheet'>
+
+            <format attr='display-field-labels' scope='rows' value='false' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]' />
+
+            </encodings>
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</rows>
+
+        <cols>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]</cols>
+
+      </table>
+
+      <simple-id uuid='{6E6034DF-11ED-4D36-A828-B4F3D3AB46CD}' />
+
+    </worksheet>
+
+    <worksheet name='세그먼트별 평균 리뷰 작성 횟수'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[total_review_cnt]' derivation='Avg' name='[avg:total_review_cnt:qk]' pivot='key' type='quantitative' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+            <column caption='총 리뷰 작성 횟수' datatype='integer' name='[total_review_cnt]' role='measure' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <shelf-sorts>
+
+            <shelf-sort-v2 dimension-to-sort='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]' shelf='rows' />
+
+          </shelf-sorts>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]' scope='cols' value='false' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]' value='*0.0회' />
+
+          </style-rule>
+
+          <style-rule element='worksheet'>
+
+            <format attr='display-field-labels' scope='rows' value='false' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]' />
+
+            </encodings>
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</rows>
+
+        <cols>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]</cols>
+
+      </table>
+
+      <simple-id uuid='{AF06C08B-8603-4E7D-823B-F94E392B602A}' />
+
+    </worksheet>
+
+    <worksheet name='세그먼트별 평균 마지막 시청 후 경과일'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column caption='C_마지막 시청 후 경과일' datatype='integer' name='[Calculation_1900546817167360]' role='measure' type='quantitative'>
+
+              <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;, [last_watch_date], TODAY())' />
+
+            </column>
+
+            <column-instance column='[Calculation_1900546817167360]' derivation='Avg' name='[avg:Calculation_1900546817167360:qk]' pivot='key' type='quantitative' />
+
+            <column caption='최근 시청일' datatype='date' name='[last_watch_date]' role='dimension' type='ordinal' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+          </datasource-dependencies>
+
+          <shelf-sorts>
+
+            <shelf-sort-v2 dimension-to-sort='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:Calculation_1900546817167360:qk]' shelf='rows' />
+
+          </shelf-sorts>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:Calculation_1900546817167360:qk]' scope='cols' value='false' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:Calculation_1900546817167360:qk]' value='*0일' />
+
+          </style-rule>
+
+          <style-rule element='worksheet'>
+
+            <format attr='display-field-labels' scope='rows' value='false' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:Calculation_1900546817167360:qk]' />
+
+            </encodings>
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</rows>
+
+        <cols>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:Calculation_1900546817167360:qk]</cols>
+
+      </table>
+
+      <simple-id uuid='{A6265A7B-0616-43A9-A88E-E3D3D2AEABE3}' />
+
+    </worksheet>
+
+    <worksheet name='세그먼트별 평균 시청 시간'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[avg_watch_minutes]' derivation='Avg' name='[avg:avg_watch_minutes:qk]' pivot='key' type='quantitative' />
+
+            <column caption='평균 시청 시간' datatype='real' name='[avg_watch_minutes]' role='measure' type='quantitative' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+          </datasource-dependencies>
+
+          <shelf-sorts>
+
+            <shelf-sort-v2 dimension-to-sort='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]' shelf='rows' />
+
+          </shelf-sorts>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]' scope='cols' value='false' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]' value='*0.0분' />
+
+          </style-rule>
+
+          <style-rule element='worksheet'>
+
+            <format attr='display-field-labels' scope='cols' value='false' />
+
+            <format attr='display-field-labels' scope='rows' value='false' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]' />
+
+            </encodings>
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</rows>
+
+        <cols>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]</cols>
+
+      </table>
+
+      <simple-id uuid='{98B99469-DC2C-4F22-A13A-46B01CEB8B61}' />
+
+    </worksheet>
+
+    <worksheet name='세그먼트별 평균 시청 장르 수'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[watch_genre_cnt]' derivation='Avg' name='[avg:watch_genre_cnt:qk]' pivot='key' type='quantitative' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+            <column caption='시청 장르 수' datatype='integer' name='[watch_genre_cnt]' role='measure' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <shelf-sorts>
+
+            <shelf-sort-v2 dimension-to-sort='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:watch_genre_cnt:qk]' shelf='rows' />
+
+          </shelf-sorts>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:watch_genre_cnt:qk]' scope='cols' value='false' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:watch_genre_cnt:qk]' value='*0.0개' />
+
+          </style-rule>
+
+          <style-rule element='worksheet'>
+
+            <format attr='display-field-labels' scope='cols' value='false' />
+
+            <format attr='display-field-labels' scope='rows' value='false' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:watch_genre_cnt:qk]' />
+
+            </encodings>
+
+            <style>
+
+              <style-rule element='datalabel'>
+
+                <format attr='color-mode' value='auto' />
+
+                <format attr='font-size' value='9' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='false' />
+
+                <format attr='mark-labels-show' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</rows>
+
+        <cols>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:watch_genre_cnt:qk]</cols>
+
+      </table>
+
+      <simple-id uuid='{9FA435DC-9BA8-46ED-9A36-3FA39CB544E6}' />
+
+    </worksheet>
+
+    <worksheet name='세그먼트별 활성 사용자 비율'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column caption='C_활성 사용자 비율' datatype='real' name='[Calculation_0760077898145806]' role='measure' type='quantitative'>
+
+              <calculation class='tableau' formula='SUM([is_active]) / COUNT([user_id])' />
+
+            </column>
+
+            <column caption='현재 활성 여부' datatype='integer' name='[is_active]' role='measure' type='quantitative' />
+
+            <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+            <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+            <column caption='사용자 ID' datatype='string' name='[user_id]' role='dimension' type='nominal' />
+
+            <column-instance column='[Calculation_0760077898145806]' derivation='User' name='[usr:Calculation_0760077898145806:qk]' pivot='key' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <shelf-sorts>
+
+            <shelf-sort-v2 dimension-to-sort='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]' shelf='columns' />
+
+          </shelf-sorts>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='axis'>
+
+            <format attr='display' class='0' field='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]' scope='rows' value='false' />
+
+          </style-rule>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]' value='p0.0%' />
+
+          </style-rule>
+
+          <style-rule element='label'>
+
+            <format attr='display' field='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' value='true' />
+
+          </style-rule>
+
+          <style-rule element='worksheet'>
+
+            <format attr='display-field-labels' scope='cols' value='false' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]' />
+
+            </encodings>
+
+            <style>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]</rows>
+
+        <cols>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</cols>
+
+      </table>
+
+      <simple-id uuid='{9A85ABE4-F4DF-4E1C-8124-DC42FD3BE0E7}' />
+
+    </worksheet>
+
+    <worksheet name='총 사용자'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[user_id]' derivation='CountD' name='[ctd:user_id:qk]' pivot='key' type='quantitative' />
+
+            <column caption='사용자 ID' datatype='string' name='[user_id]' role='dimension' type='nominal' />
+
+          </datasource-dependencies>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style />
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[ctd:user_id:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&lt;</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>[federated.1ajrkb414d21ep19p4odk181tff2].[ctd:user_id:qk]</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&gt;명</run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols />
+
+      </table>
+
+      <simple-id uuid='{94F8720B-9148-4904-954F-8A9BDC6F34E4}' />
+
+    </worksheet>
+
+    <worksheet name='평균 검색 후 클릭률'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[search_ctr]' derivation='Avg' name='[avg:search_ctr:qk]' pivot='key' type='quantitative' />
+
+            <column caption='검색 클릭률' datatype='real' name='[search_ctr]' role='measure' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]' value='p0.0%' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'><![CDATA[<[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]>]]></run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols />
+
+      </table>
+
+      <simple-id uuid='{DAA8D06D-8953-4374-8FE0-5B516189B0C7}' />
+
+    </worksheet>
+
+    <worksheet name='평균 리뷰 작성 횟수'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[total_review_cnt]' derivation='Avg' name='[avg:total_review_cnt:qk]' pivot='key' type='quantitative' />
+
+            <column caption='총 리뷰 작성 횟수' datatype='integer' name='[total_review_cnt]' role='measure' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]' value='*0.0' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&lt;</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:total_review_cnt:qk]</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&gt;회</run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols />
+
+      </table>
+
+      <simple-id uuid='{0E06C682-8019-41D2-B239-2DF2AD1276F8}' />
+
+    </worksheet>
+
+    <worksheet name='평균 시청 시간'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[avg_watch_minutes]' derivation='Avg' name='[avg:avg_watch_minutes:qk]' pivot='key' type='quantitative' />
+
+            <column caption='평균 시청 시간' datatype='real' name='[avg_watch_minutes]' role='measure' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]' value='*0.0' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&lt;</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:avg_watch_minutes:qk]</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&gt;분</run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols />
+
+      </table>
+
+      <simple-id uuid='{ED4CCFAB-D82A-487C-926B-0BFDE4B6CC27}' />
+
+    </worksheet>
+
+    <worksheet name='평균 추천 클릭률 '>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column-instance column='[recommendation_ctr]' derivation='Avg' name='[avg:recommendation_ctr:qk]' pivot='key' type='quantitative' />
+
+            <column caption='추천 클릭률' datatype='real' name='[recommendation_ctr]' role='measure' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:recommendation_ctr:qk]' value='p0.0%' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[avg:recommendation_ctr:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&lt;</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:recommendation_ctr:qk]</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&gt;</run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-show' value='true' />
+
+                <format attr='mark-labels-cull' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols />
+
+      </table>
+
+      <simple-id uuid='{0F8D0466-71DF-49F4-B441-2EC670862A45}' />
+
+    </worksheet>
+
+    <worksheet name='활성 사용자 비율'>
+
+      <layout-options>
+
+        <title>
+
+          <formatted-text>
+
+            <run>&lt;</run>
+
+            <run>Sheet Name</run>
+
+            <run>&gt;</run>
+
+          </formatted-text>
+
+        </title>
+
+      </layout-options>
+
+      <table>
+
+        <view>
+
+          <datasources>
+
+            <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+          </datasources>
+
+          <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+            <column caption='C_활성 사용자 비율' datatype='real' name='[Calculation_0760077898145806]' role='measure' type='quantitative'>
+
+              <calculation class='tableau' formula='SUM([is_active]) / COUNT([user_id])' />
+
+            </column>
+
+            <column caption='현재 활성 여부' datatype='integer' name='[is_active]' role='measure' type='quantitative' />
+
+            <column caption='사용자 ID' datatype='string' name='[user_id]' role='dimension' type='nominal' />
+
+            <column-instance column='[Calculation_0760077898145806]' derivation='User' name='[usr:Calculation_0760077898145806:qk]' pivot='key' type='quantitative' />
+
+          </datasource-dependencies>
+
+          <aggregation value='true' />
+
+        </view>
+
+        <style>
+
+          <style-rule element='cell'>
+
+            <format attr='text-format' field='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]' value='p0.0%' />
+
+          </style-rule>
+
+        </style>
+
+        <panes>
+
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+
+            <view>
+
+              <breakdown value='auto' />
+
+            </view>
+
+            <mark class='Automatic' />
+
+            <encodings>
+
+              <text column='[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]' />
+
+            </encodings>
+
+            <customized-label>
+
+              <formatted-text>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&lt;</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>[federated.1ajrkb414d21ep19p4odk181tff2].[usr:Calculation_0760077898145806:qk]</run>
+
+                <run fontname='Noto Sans CJK KR' fontsize='18'>&gt;</run>
+
+              </formatted-text>
+
+            </customized-label>
+
+            <style>
+
+              <style-rule element='cell'>
+
+                <format attr='text-align' value='center' />
+
+                <format attr='vertical-align' value='center' />
+
+              </style-rule>
+
+              <style-rule element='mark'>
+
+                <format attr='mark-labels-cull' value='true' />
+
+                <format attr='mark-labels-show' value='true' />
+
+              </style-rule>
+
+            </style>
+
+          </pane>
+
+        </panes>
+
+        <rows />
+
+        <cols />
+
+      </table>
+
+      <simple-id uuid='{585D7B24-E6EA-4B96-B8A2-3B71D15FBF6F}' />
+
+    </worksheet>
+
+  </worksheets>
+
+  <dashboards>
+
+    <dashboard enable-sort-zone-taborder='true' name='넷플릭스 사용자 행동 기반 세그먼트 인사이트 및 비즈니스 영향 분석'>
+
+      <style />
+
+      <size maxheight='1000' maxwidth='1600' minheight='1000' minwidth='1600' sizing-mode='fixed' />
+
+      <datasources>
+
+        <datasource caption='user_behavior_segment' name='federated.1ajrkb414d21ep19p4odk181tff2' />
+
+      </datasources>
+
+      <datasource-dependencies datasource='federated.1ajrkb414d21ep19p4odk181tff2'>
+
+        <column-instance column='[segment]' derivation='None' name='[none:segment:nk]' pivot='key' type='nominal' />
+
+        <column caption='사용자 세그먼트' datatype='string' name='[segment]' role='dimension' type='nominal' />
+
+      </datasource-dependencies>
+
+      <zones>
+
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+
+          <zone h='98400' id='1' param='vert' type-v2='layout-flow' w='99000' x='500' y='800'>
+
+            <zone fixed-size='100' h='10000' id='4' is-fixed='true' param='horz' type-v2='layout-flow' w='99000' x='500' y='800'>
+
+              <zone fixed-size='100' h='10000' id='6' is-fixed='true' is-scaled='1' param='Image/넷플릭스.jpeg' type-v2='bitmap' w='6250' x='3625' y='800'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='0' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone forceUpdate='true' h='10000' id='7' type-v2='text' w='65812' x='9875' y='800'>
+
+                <formatted-text>
+
+                  <run bold='true' fontcolor='#ffffff' fontname='Malgun Gothic' fontsize='18'>  넷플릭스 사용자 행동 기반 세그먼트 분석 대시보드</run>
+
+                </formatted-text>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='0' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone fixed-size='155' h='10000' id='41' is-fixed='true' name='세그먼트별 평균 시청 장르 수' pane-specification-id='0' param='[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]' type-v2='color' w='10188' x='75687' y='800'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='4' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone h='10000' id='40' mode='dropdown' name='세그먼트 분포' param='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' type-v2='filter' values='database' w='10500' x='85875' y='800'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='4' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone-style>
+
+                <format attr='border-color' value='#000000' />
+
+                <format attr='border-style' value='none' />
+
+                <format attr='border-width' value='0' />
+
+                <format attr='padding' value='50' />
+
+                <format attr='padding-top' value='0' />
+
+                <format attr='padding-bottom' value='0' />
+
+                <format attr='background-color' value='#484848' />
+
+              </zone-style>
+
+            </zone>
+
+            <zone fixed-size='884' h='88400' id='8' is-fixed='true' param='vert' type-v2='layout-flow' w='99000' x='500' y='10800'>
+
+              <zone fixed-size='3' h='300' id='36' is-fixed='true' type-v2='empty' w='92750' x='3625' y='15800'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='0' />
+
+                  <format attr='background-color' value='#000000' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone fixed-size='150' h='15000' id='9' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='92750' x='3625' y='16100'>
+
+                <zone h='15000' id='10' name='총 사용자' w='15500' x='3625' y='16100'>
+
+                  <layout-cache cell-count-h='1' non-cell-size-h='50' type-h='cell' type-w='cell' />
+
+                  <zone-style>
+
+                    <format attr='border-color' value='#000000' />
+
+                    <format attr='border-style' value='none' />
+
+                    <format attr='border-width' value='0' />
+
+                    <format attr='margin' value='4' />
+
+                  </zone-style>
+
+                </zone>
+
+                <zone h='15000' id='15' name='활성 사용자 비율' w='15500' x='19125' y='16100'>
+
+                  <layout-cache cell-count-h='1' non-cell-size-h='50' type-h='cell' type-w='cell' />
+
+                  <zone-style>
+
+                    <format attr='border-color' value='#000000' />
+
+                    <format attr='border-style' value='none' />
+
+                    <format attr='border-width' value='0' />
+
+                    <format attr='margin' value='4' />
+
+                  </zone-style>
+
+                </zone>
+
+                <zone h='15000' id='11' name='평균 시청 시간' w='15438' x='34625' y='16100'>
+
+                  <layout-cache cell-count-h='1' non-cell-size-h='50' type-h='cell' type-w='cell' />
+
+                  <zone-style>
+
+                    <format attr='border-color' value='#000000' />
+
+                    <format attr='border-style' value='none' />
+
+                    <format attr='border-width' value='0' />
+
+                    <format attr='margin' value='4' />
+
+                  </zone-style>
+
+                </zone>
+
+                <zone h='15000' id='12' name='평균 추천 클릭률 ' w='15437' x='50063' y='16100'>
+
+                  <layout-cache cell-count-h='1' non-cell-size-h='50' type-h='cell' type-w='cell' />
+
+                  <zone-style>
+
+                    <format attr='border-color' value='#000000' />
+
+                    <format attr='border-style' value='none' />
+
+                    <format attr='border-width' value='0' />
+
+                    <format attr='margin' value='4' />
+
+                  </zone-style>
+
+                </zone>
+
+                <zone h='15000' id='13' name='평균 검색 후 클릭률' w='15438' x='65500' y='16100'>
+
+                  <layout-cache cell-count-h='1' non-cell-size-h='50' type-h='cell' type-w='cell' />
+
+                  <zone-style>
+
+                    <format attr='border-color' value='#000000' />
+
+                    <format attr='border-style' value='none' />
+
+                    <format attr='border-width' value='0' />
+
+                    <format attr='margin' value='4' />
+
+                  </zone-style>
+
+                </zone>
+
+                <zone h='15000' id='14' name='평균 리뷰 작성 횟수' w='15437' x='80938' y='16100'>
+
+                  <layout-cache cell-count-h='1' non-cell-size-h='50' type-h='cell' type-w='cell' />
+
+                  <zone-style>
+
+                    <format attr='border-color' value='#000000' />
+
+                    <format attr='border-style' value='none' />
+
+                    <format attr='border-width' value='0' />
+
+                    <format attr='margin' value='4' />
+
+                  </zone-style>
+
+                </zone>
+
+              </zone>
+
+              <zone fixed-size='3' h='300' id='35' is-fixed='true' type-v2='empty' w='92750' x='3625' y='31100'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='0' />
+
+                  <format attr='background-color' value='#000000' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone fixed-size='42' h='5000' id='16' is-fixed='true' type-v2='empty' w='92750' x='3625' y='31400'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='4' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone fixed-size='3' h='300' id='37' is-fixed='true' type-v2='empty' w='92750' x='3625' y='36400'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='0' />
+
+                  <format attr='background-color' value='#000000' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone fixed-size='584' h='57200' id='17' is-fixed='true' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='92750' x='3625' y='36700'>
+
+                <zone h='28600' id='18' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='92750' x='3625' y='36700'>
+
+                  <zone h='28600' id='22' name='세그먼트 분포' w='30938' x='3625' y='36700'>
+
+                    <layout-cache cell-count-h='1' minwidth='102' non-cell-size-h='50' type-h='cell' type-w='scalable' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='0' />
+
+                    </zone-style>
+
+                  </zone>
+
+                  <zone fixed-size='457' h='28600' id='28' is-fixed='true' name='세그먼트별 평균 마지막 시청 후 경과일' w='30937' x='34563' y='36700'>
+
+                    <layout-cache cell-count-h='5' minwidth='260' non-cell-size-h='50' type-h='cell' type-w='scalable' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='10' />
+
+                    </zone-style>
+
+                  </zone>
+
+                  <zone h='28600' id='32' name='세그먼트별 평균 시청 장르 수' w='30875' x='65500' y='36700'>
+
+                    <layout-cache cell-count-h='5' minwidth='260' non-cell-size-h='50' type-h='cell' type-w='scalable' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='10' />
+
+                    </zone-style>
+
+                  </zone>
+
+                </zone>
+
+                <zone h='28600' id='20' param='horz' type-v2='layout-flow' w='92750' x='3625' y='65300'>
+
+                  <zone fixed-size='353' h='28600' id='31' is-fixed='true' name='세그먼트별 활성 사용자 비율' w='22063' x='3625' y='65300'>
+
+                    <layout-cache minheight='190' type-h='scalable' type-w='cell' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='10' />
+
+                    </zone-style>
+
+                  </zone>
+
+                  <zone h='28600' id='27' name='세그먼트별 평균 시청 시간' w='23499' x='25688' y='65300'>
+
+                    <layout-cache cell-count-h='5' minwidth='260' non-cell-size-h='50' type-h='cell' type-w='scalable' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='10' />
+
+                    </zone-style>
+
+                  </zone>
+
+                  <zone fixed-size='379' h='28600' id='29' is-fixed='true' name='세그먼트별 평균 검색 후 클릭률' w='23688' x='49187' y='65300'>
+
+                    <layout-cache cell-count-h='5' minwidth='260' non-cell-size-h='50' type-h='cell' type-w='scalable' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='10' />
+
+                    </zone-style>
+
+                  </zone>
+
+                  <zone fixed-size='376' h='28600' id='30' is-fixed='true' name='세그먼트별 평균 리뷰 작성 횟수' w='23500' x='72875' y='65300'>
+
+                    <layout-cache cell-count-h='5' minwidth='260' non-cell-size-h='50' type-h='cell' type-w='scalable' />
+
+                    <zone-style>
+
+                      <format attr='border-color' value='#000000' />
+
+                      <format attr='border-style' value='none' />
+
+                      <format attr='border-width' value='0' />
+
+                      <format attr='margin' value='0' />
+
+                      <format attr='padding' value='10' />
+
+                    </zone-style>
+
+                  </zone>
+
+                </zone>
+
+              </zone>
+
+              <zone fixed-size='3' h='300' id='38' is-fixed='true' type-v2='empty' w='92750' x='3625' y='93900'>
+
+                <zone-style>
+
+                  <format attr='border-color' value='#000000' />
+
+                  <format attr='border-style' value='none' />
+
+                  <format attr='border-width' value='0' />
+
+                  <format attr='margin' value='0' />
+
+                  <format attr='background-color' value='#000000' />
+
+                </zone-style>
+
+              </zone>
+
+              <zone-style>
+
+                <format attr='border-color' value='#000000' />
+
+                <format attr='border-style' value='none' />
+
+                <format attr='border-width' value='0' />
+
+                <format attr='padding' value='50' />
+
+              </zone-style>
+
+            </zone>
+
+          </zone>
+
+          <zone-style>
+
+            <format attr='border-color' value='#000000' />
+
+            <format attr='border-style' value='none' />
+
+            <format attr='border-width' value='0' />
+
+            <format attr='margin' value='8' />
+
+          </zone-style>
+
+        </zone>
+
+      </zones>
+
+      <simple-id uuid='{B1D5F098-A487-4B8F-A223-327BA9286E04}' />
+
+    </dashboard>
+
+  </dashboards>
+
+  <windows source-height='37'>
+
+    <window class='dashboard' maximized='true' name='넷플릭스 사용자 행동 기반 세그먼트 인사이트 및 비즈니스 영향 분석'>
+
+      <viewpoints>
+
+        <viewpoint name='세그먼트 분포'>
+
+          <zoom type='entire-view' />
+
+          <highlight field='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]'>
+
+            <bucket-selection />
+
+          </highlight>
+
+        </viewpoint>
+
+        <viewpoint name='세그먼트별 평균 검색 후 클릭률'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='세그먼트별 평균 리뷰 작성 횟수'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='세그먼트별 평균 마지막 시청 후 경과일'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='세그먼트별 평균 시청 시간'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='세그먼트별 평균 시청 장르 수'>
+
+          <zoom type='entire-view' />
+
+          <highlight>
+
+            <color-one-way>
+
+              <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]</field>
+
+            </color-one-way>
+
+          </highlight>
+
+        </viewpoint>
+
+        <viewpoint name='세그먼트별 활성 사용자 비율'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='총 사용자'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='평균 검색 후 클릭률'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='평균 리뷰 작성 횟수'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='평균 시청 시간'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='평균 추천 클릭률 '>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+        <viewpoint name='활성 사용자 비율'>
+
+          <zoom type='entire-view' />
+
+        </viewpoint>
+
+      </viewpoints>
+
+      <active id='-1' />
+
+      <simple-id uuid='{18CC6602-4722-472F-8918-8542A6940157}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트 분포'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='28'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='right'>
+
+          <strip size='160'>
+
+            <card mode='radiolist' param='[federated.1ajrkb414d21ep19p4odk181tff2].[none:country:nk]' type='filter' />
+
+            <card mode='radiolist' param='[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]' type='filter' />
+
+            <card mode='radiolist' param='[federated.1ajrkb414d21ep19p4odk181tff2].[none:Calculation_0760077864427526:nk]' type='filter' />
+
+            <card pane-specification-id='4' param='[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]' type='color' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:Calculation_0760077864427526:nk]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:country:nk]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:user_id:nk]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[pcto:cnt:segment:ok]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{11DB9D5B-ADC1-4126-8BB8-37A82DC55B32}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트별 평균 검색 후 클릭률'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='28'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{C3EC4C2C-A8DE-43FC-8C23-2A338C07FBE1}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트별 평균 리뷰 작성 횟수'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='29'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{28096B06-A4C3-4B06-9886-8D015964ED03}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트별 평균 마지막 시청 후 경과일'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='28'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <selection-collection>
+
+          <node-selection select-tuples='false'>
+
+            <oriented-node-reference orientation='horizontal'>
+
+              <node-reference>
+
+                <axis>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:Calculation_1900546817167360:qk]</axis>
+
+              </node-reference>
+
+              <page-reference />
+
+            </oriented-node-reference>
+
+          </node-selection>
+
+        </selection-collection>
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{DE74C11B-547C-4361-AAC6-2FC3558C76A5}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트별 평균 시청 시간'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='29'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[:Measure Names]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{4C165843-EF4E-4F5C-A61F-76ADBA71FD17}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트별 평균 시청 장르 수'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='28'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <selection-collection>
+
+          <node-selection select-tuples='false'>
+
+            <oriented-node-reference orientation='horizontal'>
+
+              <node-reference>
+
+                <axis>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:watch_genre_cnt:qk]</axis>
+
+              </node-reference>
+
+              <page-reference />
+
+            </oriented-node-reference>
+
+          </node-selection>
+
+        </selection-collection>
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:subscription_plan:nk]</field>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:user_id:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{37601F73-E94D-4AC2-AA79-CB4E64BE2DB7}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='세그먼트별 활성 사용자 비율'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='30'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:segment:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{261ACDD2-7166-43E3-B27E-6EE4743BA2C8}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='총 사용자'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='28'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <highlight>
+
+          <color-one-way>
+
+            <field>[federated.1ajrkb414d21ep19p4odk181tff2].[none:user_id:nk]</field>
+
+          </color-one-way>
+
+        </highlight>
+
+      </viewpoint>
+
+      <simple-id uuid='{B2BA07BC-0958-4442-962B-E4F1626B9596}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='평균 검색 후 클릭률'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='28'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+        <selection-collection>
+
+          <tuple-selection>
+
+            <tuple-reference>
+
+              <tuple-descriptor>
+
+                <pane-descriptor>
+
+                  <x-fields />
+
+                  <y-fields />
+
+                </pane-descriptor>
+
+                <columns>
+
+                  <field>[federated.1ajrkb414d21ep19p4odk181tff2].[avg:search_ctr:qk]</field>
+
+                </columns>
+
+              </tuple-descriptor>
+
+              <tuple>
+
+                <value>0.49079514478554193</value>
+
+              </tuple>
+
+            </tuple-reference>
+
+          </tuple-selection>
+
+        </selection-collection>
+
+      </viewpoint>
+
+      <simple-id uuid='{28DE8BFB-F43F-493F-AE23-9361351F1A82}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='평균 리뷰 작성 횟수'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='30'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+      </viewpoint>
+
+      <simple-id uuid='{00790C39-1E6E-4589-B239-942C9CBCA696}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='평균 시청 시간'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='30'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+      </viewpoint>
+
+      <simple-id uuid='{CB8D361B-AB7A-419E-8053-C60730F25D16}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='평균 추천 클릭률 '>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='30'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+      </viewpoint>
+
+      <simple-id uuid='{402912E2-7436-47E3-9096-C93C3B22AAE0}' />
+
+    </window>
+
+    <window class='worksheet' hidden='true' name='활성 사용자 비율'>
+
+      <cards>
+
+        <edge name='left'>
+
+          <strip size='160'>
+
+            <card type='pages' />
+
+            <card type='filters' />
+
+            <card type='marks' />
+
+          </strip>
+
+        </edge>
+
+        <edge name='top'>
+
+          <strip size='2147483647'>
+
+            <card type='columns' />
+
+          </strip>
+
+          <strip size='2147483647'>
+
+            <card type='rows' />
+
+          </strip>
+
+          <strip size='30'>
+
+            <card type='title' />
+
+          </strip>
+
+        </edge>
+
+      </cards>
+
+      <viewpoint>
+
+        <zoom type='entire-view' />
+
+      </viewpoint>
+
+      <simple-id uuid='{4FC2427E-6CD6-42C7-963D-0CAFA264D621}' />
+
+    </window>
+
+  </windows>
+
+  <thumbnails>
+
+    <thumbnail height='192' name='넷플릭스 사용자 행동 기반 세그먼트 인사이트 및 비즈니스 영향 분석' width='192'>
+
+      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
+
+      l2t/AAAAAElFTkSuQmCC
+
+    </thumbnail>
+
+  </thumbnails>
+
+</workbook>
+
