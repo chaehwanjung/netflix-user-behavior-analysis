@@ -1,0 +1,21 @@
+# Local credentials / environment
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+# Data files (licensing not verified)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/schema.json
+*.hyper
+*.twbx
+*.twbr
+# Recreated outputs
+notebooks/xgboost_tuned_result.png

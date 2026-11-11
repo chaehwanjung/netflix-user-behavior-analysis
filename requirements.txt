@@ -1,0 +1,12 @@
+# 원본 환경의 패키지 버전 정보가 없어 버전을 고정하지 않았습니다.
+# 새 환경에서 동일 결과를 보장하는 lock 파일은 아닙니다.
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+lightgbm
+scipy
+koreanize-matplotlib
+jupyterlab
